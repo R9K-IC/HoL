@@ -88,7 +88,7 @@ bot.on("any", function(event){
 		if(event.d.user_id == bot.id || event.d.guild_id != cache.GID || event.d.message_id != currentWatchedMessage){ return; }
 		var roleParams = {roleID: cache.roleCache[cache.emojiHash[event.d.emoji.id]], serverID: cache.GID, userID: event.d.user_id};
 	}
-	catch{
+	catch (e){
 		return;
 	}
 	

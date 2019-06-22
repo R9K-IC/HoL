@@ -1,8 +1,8 @@
 module.exports = {
 	GID : '498305020270215178',
-	announceChannel : '591922700021399562',
+	announceChannel : '591922535596294174',
 	emojiCache : [
-		':GuildRaidLags:591827478796959757'
+		':GuildRaidLags:591827478796959757',
 		':BjornLapLags:591828097763115009',
 		':LumarigonLapLags:591828106440867850',
 		':PinkBeanLapLags:591828114720686080',

@@ -56,6 +56,7 @@ bot.on("message", function(user, userID, channelID, message, event){
 		while((temp2 = re2.exec(temp1[1])) != null){ cmds.push(temp2[1]); }
 		
 		//Hardcoded cause I don't give a shit enough to completely reformat how I originally made the bot that this is using the skeleton of to make this elegant.
+		if(userID == 157212139344494592 && cmds[0].toLowerCase() == 'reset'){ setupWeeklyMessage(); }
 		if(userID == 142927389574299648 && cmds[0].toLowerCase() == 'reset'){ setupWeeklyMessage(); }
 		if(userID == 142927389574299648 && cmds[0].toLowerCase() == 'resetnuke'){ setupWeeklyMessage(1); }
 		
@@ -122,7 +123,7 @@ function setNextWeeklyTimer(){
 }
 
 function setupWeeklyMessage(nuke){
-	sendMessages(cache.testChannel, [cache.weeklyMessage]);
+	sendMessages(cache.announceChannel, [cache.weeklyMessage]);
 	waitingForWeeklyMessageID = true;
 	setNextWeeklyTimer();
 	if(nuke){ removeRolesFromAll(); }

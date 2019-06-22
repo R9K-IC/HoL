@@ -1,7 +1,8 @@
 module.exports = {
 	GID : '498305020270215178',
-	testChannel : '591826771754745885',
+	announceChannel : '591922700021399562',
 	emojiCache : [
+		':GuildRaidLags:591827478796959757'
 		':BjornLapLags:591828097763115009',
 		':LumarigonLapLags:591828106440867850',
 		':PinkBeanLapLags:591828114720686080',
@@ -11,15 +12,17 @@ module.exports = {
 		':BSNLags:591899782004473857',
 	],
 	emojiHash : {
-		'591828097763115009': 0,
-		'591828106440867850': 1,
-		'591828114720686080': 2,
-		'591828123457290250': 3,
-		'591828131728326657': 4,
-		'591828143732686849': 5,
-		'591899782004473857': 6,
+		'591827478796959757': 0,
+		'591828097763115009': 1,
+		'591828106440867850': 2,
+		'591828114720686080': 3,
+		'591828123457290250': 4,
+		'591828131728326657': 5,
+		'591828143732686849': 6,
+		'591899782004473857': 7,
 	},
 	roleCache : [
+		'591873393582669824',
 		'591884811992563734',
 		'591885062472204298',
 		'591885161918889994',
@@ -29,6 +32,7 @@ module.exports = {
 		'591886969362186260',
 	],
 	roleSearch : {
+		'591873393582669824': 1,
 		'591884811992563734': 1,
 		'591885062472204298': 1,
 		'591885161918889994': 1,
@@ -43,7 +47,8 @@ module.exports = {
 		React to gain a role; unreact to drop a role!
 		*(Note: Roles will automatically drop when a new post is made)*
 
-		__**Chaos Raids**__
+		__**Raids**__
+        <:GuildRaidLags:591827478796959757> : Guild Raid - Xenon System L1-L5
 		<:BjornLapLags:591828097763115009> : **Bjorn** - Frostpillar Temple
 		<:LumarigonLapLags:591828106440867850> : **Lukarax** - Madrakan Spire
 		<:PinkBeanLapLags:591828114720686080> : **Pink Bean** - Rock 'n' Rollin' Pink Bean

@@ -11,7 +11,7 @@ module.exports = {
 		':TerminusLapLags:591828143732686849',
 		':BSNLags:591899782004473857',
 	],
-	emojiHash : {
+	emojiHash: {
 		'591827478796959757': 0,
 		'591828097763115009': 1,
 		'591828106440867850': 2,
@@ -21,7 +21,7 @@ module.exports = {
 		'591828143732686849': 6,
 		'591899782004473857': 7,
 	},
-	roleCache : [
+	roleCache: [
 		'591873393582669824',
 		'591884811992563734',
 		'591885062472204298',
@@ -31,7 +31,7 @@ module.exports = {
 		'591885365246427137',
 		'591886969362186260',
 	],
-	roleSearch : {
+	roleSearch: {
 		'591873393582669824': 1,
 		'591884811992563734': 1,
 		'591885062472204298': 1,
@@ -41,14 +41,14 @@ module.exports = {
 		'591885365246427137': 1,
 		'591886969362186260': 1,
 	},
-	weeklyMessage : `<@&510853594292158481> ***It's a new week, Laggers!***
+	weeklyMessage: `<@&510853594292158481> ***It's a new week, Laggers!***
 
 		To help organize raids and dungeons, we have custom pingable roles!
 		React to gain a role; unreact to drop a role!
 		*(Note: Roles will automatically drop when a new post is made)*
 
 		__**Raids**__
-        <:GuildRaidLags:591827478796959757> : Guild Raid - Xenon System L1-L5
+        <:GuildRaidLags:591827478796959757> : **Guild Raid** - Xenon System L1-L5
 		<:BjornLapLags:591828097763115009> : **Bjorn** - Frostpillar Temple
 		<:LumarigonLapLags:591828106440867850> : **Lukarax** - Madrakan Spire
 		<:PinkBeanLapLags:591828114720686080> : **Pink Bean** - Rock 'n' Rollin' Pink Bean
@@ -57,5 +57,5 @@ module.exports = {
 		<:EmeraldLapLags:591828123457290250> : **Eupheria** - Emerald Prison
 		<:AzureLapLags:591828131728326657> : **Landevian** - Azure Flux
 		<:TerminusLapLags:591828143732686849> : **Ishura** - Terminus of Time
-		<:BSNLags:591899782004473857> : **BSN** - Blackshard Nexus`
+		<:BSNLags:591899782004473857> : **BSN** - Blackshard Nexus`,
 }

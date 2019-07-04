@@ -5,9 +5,6 @@ module.exports = {
 	reactToMessage: function(_msg){
 		_msg.bot.addReaction(_msg);
 	},
-	changeReactChance: function(p){
-		reactChance = p;
-	},
 	splitMessage: function(text, { maxLength = 1950, char = '\n', prepend = '', append = '' } = {}) {
 	  if (text.length <= maxLength) return [text];
 	  const splitText = text.split(char);

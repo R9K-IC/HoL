@@ -1,3 +1,5 @@
+//TODO: Automatically reacquire most recent message to understand reacts to that message.
+
 var Discord = require('discord.io');
 var util = require('./util/util');
 var commands = require('./cmds/cmds');
@@ -22,7 +24,7 @@ var timersSet = {};
 var weeklyToggle = true;
 
 var roleWaitlist = [];
-var currentWatchedMessage;
+var currentWatchedMessage = 593953712209264650;
 var waitingForWeeklyMessageID = false;
 
 /* Statics */
@@ -117,16 +119,36 @@ function setNextWeeklyTimer(){
 		console.log(nT - cT);
 		setTimeout(function(){
 			if(weeklyToggle){ setupWeeklyMessage(1); }
+			else{ setNextWeeklyTimer(); }
 		}, nT - cT);
 		timersSet[nT] = 1;
 	}
 }
 
 function setupWeeklyMessage(nuke){
-	sendMessages(cache.announceChannel, [cache.weeklyMessage]);
-	waitingForWeeklyMessageID = true;
-	setNextWeeklyTimer();
-	if(nuke){ removeRolesFromAll(); }
+	if(nuke){ removeRolesFromAll(); waitForNuke(cache.announceChannel, [cache.weeklyMessage]); }
+	else{
+		sendMessages(cache.announceChannel, [cache.weeklyMessage]);
+		waitingForWeeklyMessageID = true;
+		setNextWeeklyTimer();
+	}
+}
+
+function waitForNuke(cID, messageArr){
+	interval = 200;
+	function _waitForNuke(){
+		setTimeout(function(){
+			if(roleWaitlist[0]){
+				_waitForNuke();
+			}
+			else{
+				sendMessages(cID, messageArr);
+				waitingForWeeklyMessageID = true;
+				setNextWeeklyTimer();
+			}
+		}, interval);
+	}
+	_waitForNuke();
 }
 
 function removeRolesFromAll(){
